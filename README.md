@@ -1,4 +1,4 @@
-# MyCat - A menu bar app for macOS written in Lisp
+# MyCat - A menu bar app for macOS written in SBCL
 
 ![Preview](images/demo.gif)  
 MyCat.app is have no feature. just Cute :-)  
