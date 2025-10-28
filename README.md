@@ -1,6 +1,6 @@
 # MyCat - A menu bar app for macOS written in SBCL
 
-![Preview](images/demo.gif)  
+![Preview](images/preview.gif)  
 MyCat.app is have no feature. just Cute :-)  
 Please place it on your desktop and enjoy.
 
