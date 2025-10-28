@@ -20,3 +20,8 @@ only work in Silicon Mac. If you have Intel based mac, You should be build your 
 2. clone to this repository
 3. **cd /PATH/TO/MyCat/build**
 4. **sh build.sh**
+
+
+## Assets 
+https://www.gameart2d.com/cat-and-dog-free-sprites.html
+
