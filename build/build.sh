@@ -3,16 +3,9 @@
 appName="MyCat"
 
 
-if [ -z $appName ];then
-  echo "appName 을 기술하세요"
-  exit 1
-fi
-
-
-####################
-#  App Bundle 생성  #
-####################
-
+################
+#  App Bundle  #
+################
 
 if [ -d $appName.app ]; then rm -rf $appName.app; fi
 
@@ -25,12 +18,14 @@ mkdir $appName.app/Contents/Frameworks
 cp Info.plist $appName.app/Contents
 cp -R ../assets/* $appName.app/Contents/Resources
 
-###################
-#  Framework 복사  #
-###################
+
+###############
+#  Framework  #
+###############
 
 cp ~/quicklisp/local-projects/lib/cl-nextstep/libcl-nextstep.dylib $appName.app/Contents/Frameworks
 install_name_tool -id @executable_path/../Frameworks/libcl-nextstep.dylib $appName.app/Contents/Frameworks/libcl-nextstep.dylib
+
 
 ###########
 #  build  #
