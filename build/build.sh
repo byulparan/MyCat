@@ -3,7 +3,14 @@
 appName="MyCat"
 
 # If it was installed in a different location, correct it to the proper one.
-cl_nextstep="~/quicklisp/local-projects/lib/cl-nextstep/libcl-nextstep.dylib"
+cl_nextstep="$HOME/quicklisp/local-projects/lib/cl-nextstep/libcl-nextstep.dylib"
+
+
+if [ ! -f  $cl_nextstep ];then
+  echo "You should be install and build cl-nextstep"
+  exit 1
+fi
+
 
 ################
 #  App Bundle  #
@@ -24,12 +31,6 @@ cp -R ../assets/* $appName.app/Contents/Resources
 ###############
 #  Framework  #
 ###############
-
-#
-if [ ! -f  $cl_nextstep ];then
-  echo "You should be install and build cl-nextstep"
-  exit 1
-fi
 
 cp $cl_nextstep $appName.app/Contents/Frameworks
 install_name_tool -id @executable_path/../Frameworks/libcl-nextstep.dylib $appName.app/Contents/Frameworks/libcl-nextstep.dylib
