@@ -30,7 +30,7 @@
 	     (cffi:load-foreign-library (concatenate 'string frameworks-dir name))))
       (load-library "libcl-nextstep.dylib"))
     (setf my-cat:*assets* (concatenate 'string runtime-dir "../Resources/")))
-  (ns:start-event-loop (list #'my-cat:add-menubar)))
+  (ns:start-event-loop :initial-functions (list #'my-cat:add-menubar)))
 
 
 
