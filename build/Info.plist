@@ -9,7 +9,7 @@
     <key>NSPrincipalClass</key>
     <string>LispApplication</string>
     <key>CFBundleIdentifier</key>
-    <string>org.SungminPark.love</string>
+    <string>org.byulparanSungminPark.MyCat</string>
     <key>CFBundleIconFile</key>
     <string>cat.icns</string>
     <key>LSUIElement</key>
