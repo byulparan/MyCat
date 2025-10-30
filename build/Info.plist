@@ -4,14 +4,14 @@
   <dict>
     <key>CFBundleExecutable</key>
     <string>MyCat</string>
+    <key>CFBundleIconFile</key>
+    <string>cat.icns</string>
+    <key>CFBundleIdentifier</key>
+    <string>org.byulparanSungminPark.MyCat</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>NSPrincipalClass</key>
     <string>LispApplication</string>
-    <key>CFBundleIdentifier</key>
-    <string>org.byulparanSungminPark.MyCat</string>
-    <key>CFBundleIconFile</key>
-    <string>cat.icns</string>
     <key>LSUIElement</key>
     <true/>
   </dict>
